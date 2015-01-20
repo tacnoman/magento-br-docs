@@ -25,3 +25,27 @@ Volte ao painel em `CMS -> Static Blocks` e note a segunda coluna da tabela `Ide
 Como os blocos fazem parte do Layout, é importante antes de chamar o método de criar o bloco chamar o layout.
 
 O método `->toHtml()` converte processa o arquivo phtml para exibir na página.
+
+## No CMS
+
+Agora que você já entendeu como funciona as instâncias de blocos estáticos, você pode precisar em algum momento inserir um bloco estático dentro de outro pelo CMS do Magento.
+
+A lógica é a mesma para o código listado acima, porém no CMS os códigos dinâmicos são inseridos entre chaves( `{{` ).
+
+```
+/**
+ * {\{block type="cms/block" block_id="footer_links"}}
+ */
+ ```
+
+ ## XML
+
+ Para inserir pelo XML um bloco, basta adicionar o seguinte código
+
+ ```xml
+ <reference name="content">
+   <block type="cms/block" name="block.name">
+     <action method="setBlockId"><block_id>footer_links</block_id></action>
+   </block>
+ </reference>
+ ```
