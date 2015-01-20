@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **Daux.io** is an documentation generator that uses a simple folder structure and Markdown files to create custom documentation on the fly. It helps you create great looking documentation in a developer friendly way.
 
 ## Features
@@ -358,4 +359,4 @@ If you need help using Daux.io, or have found a bug, please create an issue on t
 =======
 # magento-br-docs
 Documentação de desenvolvimento do magento. Baixe e contribua.
-
+>>>>>>> 74ba4c507783480a2a59b1894a6c092b9daff1af
